@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  height: 29rem;
+  border-radius: 0.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:2rem 4rem;
+}
+
+.card1 {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.icon-img {
+  width: 3rem;
+  height: 2rem;
+}
+
+.main-heading {
+  color: hsl(0, 0%, 100%);
+  font-family: "Big Shoulders Display", cursive;
+  margin: 0;
+  margin-top: -1rem;
+}
+
+.main-para{
+    color: hsla(0, 0%, 100%, 0.699);
+    /* font-family: "Lexend Deca", sans-serif; */
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7rem;
+    margin-top: -1rem;
+}
+
+.btn{
+    width: 70%;
+    background-color: white;
+    border-radius: 2rem;
+    border: 2px solid white;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn1{
+    color: hsl(31, 77%, 52%);
+}
+
+.btn2{
+    color:  hsl(184, 100%, 22%);
+}
+
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+/* Media query for Responsive design */
+@media (max-width:1400px){
+    .container{
+        width: 70%;
+        height: 29rem;
+    }
+}
+
+
+@media (max-width: 1200px){
+    .container{
+        width: 90%;
+        height: 29rem;
+    }
+    .icon-img {
+        width: 3.5rem;
+        height: 2.5rem;
+      }
+}
+
+@media (max-width: 992px){
+    .container{
+        width: 90%;
+        height: 30rem;
+    }
+  
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+        /* margin: 2rem 0; */
+        width: 95%;
+        height: 100%;
+    }
+    .icon-img {
+        width: 4rem;
+        height: 3rem;
+      }
+      .card{
+        height: 20rem;
+      }
+      .card1 {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+    }
+
+    .card3 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+}
+
+@media (max-width: 576px){
+    .icon-img {
+        width: 3rem;
+        height:2rem;
+      }
+}
+
+
